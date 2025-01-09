@@ -8,8 +8,8 @@ import json
 recognizer = sr.Recognizer()
 engine = pyttsx3.init()
 
-SONGS_FILE = "songs.json"
-SOFTWARE_FILE = "software.json"
+SONGS_FILE = "../songs.json"
+SOFTWARE_FILE = "../software.json"
 
 def load_songs():
     try:

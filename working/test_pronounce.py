@@ -11,7 +11,7 @@ if __name__ == "__main__":
         speak(c)
         
 '''
-SOFTWARE_FILE = "software.json"
+SOFTWARE_FILE = "../software.json"
 
 def speak(text):
     """Speak the provided text using pyttsx3."""
@@ -57,7 +57,7 @@ def open_software(path):
     except Exception as e:
         print(f"Failed to open software: {e}")
 
-SOFTWARE_FILE = "software.json"
+SOFTWARE_FILE = "../software.json"
 
 software_name = "brave"
 path = find_software_path(software_name)

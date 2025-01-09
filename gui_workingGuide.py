@@ -13,7 +13,7 @@ frame = HtmlFrame(root, horizontal_scrollbar="auto")
 frame.pack(fill="both", expand=True)
 
 # Get the absolute path to the HTML file
-html_file_path = os.path.join(os.path.dirname(__file__), "webFile", "developer.html")
+html_file_path = os.path.join(os.path.dirname(__file__), "webFile", "working.html")
 
 # Load the HTML file
 frame.load_file(html_file_path)

@@ -1,10 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Use Software</title>
+    <style>
+        body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.section {
+    margin-bottom: 30px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.music-section {
+    background-color: #ffcccb;
+}
+
+.website-section {
+    background-color: #add8e6;
+}
+
+.software-section {
+    background-color: #90ee90;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+ol {
+    padding-left: 20px;
+}
+
+li {
+    margin: 5px 0;
+    color: #555;
+}
+
+button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+    </style>
 </head>
 <body>
-$END$
+    <div class="container">
+        <h1>How to Use</h1>
+
+        <div class="section music-section">
+            <h2>How to Play Music</h2>
+            <ul>
+                <li>Add the music name and music link in offline database</li>
+                <li>just say <strong> [ASSISTANT NAME] PLAY [MUSIC NAME] </strong></li>
+            </ul>
+        </div>
+
+        <div class="section website-section">
+            <h2>How to Open a Website</h2>
+            <ul>
+                <li>Just say <strong> [ASSISTANT NAME] OPEN WEBSITE [WEBSITE NAME]</strong></li>
+            </ul>
+        </div>
+
+        <div class="section software-section">
+            <h2>How to Open Software</h2>
+            <ul>
+                <li>Add the software name  and Software path in offline database</li>
+                <li>Just say <strong> [ASSISTANT NAME] OPEN SOFTWARE [SOFTWARE NAME]</strong></li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function playMusic(mp3File, audioPlayerId) {
+            const audioPlayer = document.getElementById(audioPlayerId);
+            audioPlayer.src = mp3File;
+            audioPlayer.style.display = 'block';
+            audioPlayer.play();
+        }
+    </script>
 </body>
 </html>
